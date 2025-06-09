@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
 margin: 0px;
 padding: 0px;
@@ -11,6 +13,10 @@ overflow-x: hidden;
 }
 section {
 padding: 0px 32px;
+}
+p {
+font-size: 18px;
+line-height: 1.5;
 }
 nav {
 display: flex;
@@ -160,6 +166,107 @@ border-bottom-width: 2px;
 border-bottom-style: solid;
 border-bottom-color: transparent;
 }
+header {
+position: relative;
+}
+.container {
+padding: 96px 0px;
+}
+h1 {
+font-size: 48px;
+color: rgb(26, 32, 44);
+line-height: 1.25;
+}
+.purple {
+color: rgb(100, 21, 255);
+}.header__description--para {
+margin: 32px 0px;
+}
+.header__email {
+width: 100%;
+max-width: 448px;
+height: 68px;
+position: relative;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+.header__email--input {
+width: 100%;
+border-radius: 500px;
+border: 2px solid rgb(229, 231, 235);
+padding: 20px 192px 20px 32px;
+color: rgb(36, 62, 99);
+font-size: 16px;
+font-weight: 500;
+position: absolute;
+top: 0px;
+bottom: 0px;
+z-index: 1;
+transition: border-color 300ms;
+}
+.header__email--btn {
+z-index: 2;
+margin: 8px;
+height: calc(100% - 16px);
+border-radius: 500px;
+width: 160px;
+border: medium;
+background-color: rgb(100, 21, 255);
+color: rgb(255, 255, 255);
+font-weight: 700;
+font-size: 16px;
+transition: 300ms;
+}
+button {
+cursor: pointer;
+border: medium;
+}
+.header__customers--title {
+margin-top: 80px;
+color: rgb(160, 174, 192);
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 0.6px;
+}
+.header__customers {
+margin-top: 16px;
+padding-right: 128px;
+opacity: 0.5;
+}
+img {
+width: 100%;
+}
+.header__img {
+width: 100%;
+max-width: 768px;
+}
+.header__blob {
+position: absolute;
+left: 0px;
+bottom: 0px;
+opacity: 0.05;
+width: 256px;
+height: 256px;
+transform: matrix(1, 0, 0, 1, -163, 0);
+}
+input::placeholder {
+white-space-collapse: preserve;
+text-wrap-mode: nowrap;
+overflow-wrap: normal;
+overflow-x: hidden;
+overflow-y: hidden;
+line-height: initial;
+}
+Style Sheet::placeholder {
+-webkit-text-security: none;
+color: darkgray;
+direction: inherit;
+pointer-events: none;
+text-orientation: inherit;
+writing-mode: inherit;
+}
+
 
 
 /* 
