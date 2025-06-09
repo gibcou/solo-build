@@ -1,96 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>solo-build</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script src="script.js"></script>
+    <title> Solo Build</title>
+</script>
 </head>
-
 <body>
     <section id="landing">
         <nav>
             <div class="row nav__row">
                 <div class="nav__logo">
                     <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="logo">
-                    <div class="nav__logo--title">Treact</div>
+                    <div class="nav__logo--title"> Treact </div>
                 </div>
-                <div class="nav__links">    
-                    <a href="#landing" class="nav__link">
-                        About
-                    </a>
-                    <a href="#landing" class="nav__link">
-                        Blog
-                    </a>
-                    <a href="#features" class="nav__link">
-                        Pricing
-                    </a>
-                    <a href="#pricing" class="nav__link">
-                        Contact Us
-                    </a>
-                    <a href="#testimonials" class="nav__link login">
-                        Login
-                    </a>
-                    <a href="#contact" class="nav__link nav__link--primary">
-                        Sign Up
-                    </a>
+                <div class="nav__links">
+                    <a class="nav__link" href="#">About </a>
+                    <a href="#" class="nav__link">Blog</a>
+                    <a href="#" class="nav__link">Pricing</a>
+                    <a href="#" class="nav__link">Contact Us</a>
+                    <a href="#" class="nav__link login">login</a>
+                    <a href="#" class="nav__link nav__link--primary">Sign Up</a>
                 </div>
-                <div class="modal">
-                    <button class="btn__menu" onclick="openMenu()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="btn__menu--svg">
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>
-                    </button>
-                    <div class="modal__links">
-                        <a class="modal__link">About</a>
-                        <a class="modal__link">Blog</a>
-                        <a class="modal__link">Pricing</a>
-                        <a class="modal__link">Contact Us</a>
-                        <a class="modal__link">Login</a>
-                        <a class="modal__link modal__link--primary">Sign Up</a>
-                    </div>
-                </div>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="btn__menu--svg">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </nav>
-        <header>
-            <div class="container">
-                <div class="row">
-                <h1>
-                    Beautiful React Templates <span class="purple">for you.</span>
-                </h1>
-                <p class="header__description--para">
-                    Our templates are easy to setup, understand and customize. Fully modular components with a
-                    variety of pages and components.
-                </p>
-                <div class="header__email">
-                    <input type="text" class="header__email--input" placeholder="Your E-mail Address">
-                <div contenteditable="plaintext-only"></div>
-                <type="text" class="header__email--input" placeholder="Your E-mail Address">    
-                </input>
-               <button class="header__email--btn">Get Started</button>
+        <div class="modal">
+           <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal__links">
+                <a class="modal__link" href="#">About</a>
+                <a class="modal__link" href="#">Blog</a>
+                <a class="modal__link" href="#">Pricing</a>
+                <a class="modal__link" href="#">Contact Us</a>
+                <a class="modal__link" href="#">Login</a>
+                <a class="modal__link modal__link--primary" href="#">Sign Up</a>            
             </div>
-                <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
-            </div>
-            <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="" class="header__customers">
         </div>
-        <figure class="header__img--wrapper">
-                        <img src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="" class="header__img">
-                    </figure>
-                </div>
-            </div>
-            <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="header__blob">
-                <g transform="translate(300,300)">
-                    <path d="M176.2,-106.9C208.7,-45.5,201.8,33.5,165.8,99.4C129.9,165.3,65,218.2,-9.2,223.5C-83.4,228.8,-166.9,186.7,-201.6,121.4C-236.4,56.2,-222.6,-32.2,-180.9,-98.9C-139.1,-165.7,-69.6,-210.8,1.2,-211.5C71.9,-212.2,143.8,-168.3,176.2,-106.9Z" fill="#6415ff"></path>
-                </g>
-            </svg>
-        </header>
     </section>
+</body>
+</html>
