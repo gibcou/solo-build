@@ -28,7 +28,7 @@ justify-content: space-between;
 }
 .row {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .nav__logo {
@@ -118,7 +118,7 @@ button {
     cursor: pointer;
     border: none;
 }
-.btn__menu--svg:hover {
+.btn__menu--svg {
 filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
 }
 .modal {
@@ -178,13 +178,20 @@ position: relative;
 }
 h1 {
 font-size: 48px;
-color: rgb(26, 32, 44);
+color: #1a202c;
 line-height: 1.25;
 }
 .purple {
 color: rgb(100, 21, 255);
-}.header__description--para {
-margin: 32px 0px;
+}
+.header__description {
+    margin: 32px 0;
+    width: 40%;
+}
+.header__description--para {
+margin: 32px 0;
+font-size: 18px;
+line-height: 1.5;
 }
 header .row {
 display: flex;
@@ -291,12 +298,9 @@ max-width: 1024px;
 margin: 0 auto;
 }
 .row{
-    width: 100%;
-/* Removed duplicate .row definition */
+width: 100%;
 color: #6415ff;
 letter-spacing: 1.6px;
-font-weight: 700;
-text-transform: uppercase;
 }
 #features .section__title, 
 #pricing .section__title {
@@ -373,11 +377,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
-.row {
-width: 100%;
-max-width: 1200px;
-margin: 0 auto;
-}
+
 .quality__description {
 max-width: 576px;
 margin-right: 64px;
@@ -471,11 +471,6 @@ padding: 96px 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
-}
-.row {
-width: 100%;
-max-width: 1200px;
-margin: 0 auto;
 }
 .steps__img--wrapper {
 display: flex;
@@ -580,11 +575,6 @@ Values
 display: flex;
 justify-content: space-between;
 align-items: center;
-}
-.row {
-width: 100%;
-max-width: 1280px;
-margin: 0 auto;
 }
 .values__description {
 padding: 32px 64px 32px 0;
@@ -1198,13 +1188,12 @@ max-width: 512px;
 
 @media (max-width: 1024px) {
 .header__description {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ justify-content: center;
 }
-.header__description,
-.header__img--wrapper {
+    .btn__menu {
+        display: block;
+    }
+.header__img--wrapper{
     width: 100%;
     max-width: 512px;
     margin: 0 auto;
